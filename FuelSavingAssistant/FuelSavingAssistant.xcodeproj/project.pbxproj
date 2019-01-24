@@ -24,6 +24,14 @@
 		BB5460A721F99BC70048AE01 /* head.png in Resources */ = {isa = PBXBuildFile; fileRef = BB5460A621F99BC60048AE01 /* head.png */; };
 		BB5460B021F9B9E10048AE01 /* YHTRewardHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5460AE21F9B9E10048AE01 /* YHTRewardHistoryViewController.m */; };
 		BB5460B121F9B9E10048AE01 /* YHTRewardHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB5460AF21F9B9E10048AE01 /* YHTRewardHistoryViewController.xib */; };
+		BB5460BE21F9C24B0048AE01 /* RPTaggedNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5460BD21F9C24B0048AE01 /* RPTaggedNavView.m */; };
+		BB5460C121F9C2990048AE01 /* UIView+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5460C021F9C2990048AE01 /* UIView+Ext.m */; };
+		BB5460C421F9CB0A0048AE01 /* YHTDateChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5460C321F9CB0A0048AE01 /* YHTDateChartView.m */; };
+		BB5460C821F9D1F70048AE01 /* YHTDateChartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB5460C721F9D1F70048AE01 /* YHTDateChartView.xib */; };
+		BB5460D021F9DACA0048AE01 /* DemoBMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5460CA21F9DACA0048AE01 /* DemoBMainCell.m */; };
+		BB5460D121F9DACA0048AE01 /* HistogramColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5460CC21F9DACA0048AE01 /* HistogramColorView.m */; };
+		BB5460D221F9DACA0048AE01 /* DemoBMainTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5460CD21F9DACA0048AE01 /* DemoBMainTopView.m */; };
+		BB5460D521F9DC9D0048AE01 /* HistogramModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5460D421F9DC9D0048AE01 /* HistogramModel.m */; };
 		BB61403C21F36F8E00F23C97 /* UIImage+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = BB61403821F36F8E00F23C97 /* UIImage+LX.m */; };
 		BB61403D21F36F8E00F23C97 /* UIColor+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = BB61403921F36F8E00F23C97 /* UIColor+LX.m */; };
 		BB7B40AB21F6B04600DFFF19 /* YHTMyDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7B40A921F6B04600DFFF19 /* YHTMyDataViewController.m */; };
@@ -155,6 +163,21 @@
 		BB5460AD21F9B9E10048AE01 /* YHTRewardHistoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHTRewardHistoryViewController.h; sourceTree = "<group>"; };
 		BB5460AE21F9B9E10048AE01 /* YHTRewardHistoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHTRewardHistoryViewController.m; sourceTree = "<group>"; };
 		BB5460AF21F9B9E10048AE01 /* YHTRewardHistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YHTRewardHistoryViewController.xib; sourceTree = "<group>"; };
+		BB5460BC21F9C24A0048AE01 /* RPTaggedNavView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPTaggedNavView.h; sourceTree = "<group>"; };
+		BB5460BD21F9C24B0048AE01 /* RPTaggedNavView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPTaggedNavView.m; sourceTree = "<group>"; };
+		BB5460BF21F9C2990048AE01 /* UIView+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Ext.h"; sourceTree = "<group>"; };
+		BB5460C021F9C2990048AE01 /* UIView+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Ext.m"; sourceTree = "<group>"; };
+		BB5460C221F9CB0A0048AE01 /* YHTDateChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHTDateChartView.h; sourceTree = "<group>"; };
+		BB5460C321F9CB0A0048AE01 /* YHTDateChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHTDateChartView.m; sourceTree = "<group>"; };
+		BB5460C721F9D1F70048AE01 /* YHTDateChartView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YHTDateChartView.xib; sourceTree = "<group>"; };
+		BB5460CA21F9DACA0048AE01 /* DemoBMainCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoBMainCell.m; sourceTree = "<group>"; };
+		BB5460CB21F9DACA0048AE01 /* DemoBMainTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoBMainTopView.h; sourceTree = "<group>"; };
+		BB5460CC21F9DACA0048AE01 /* HistogramColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistogramColorView.m; sourceTree = "<group>"; };
+		BB5460CD21F9DACA0048AE01 /* DemoBMainTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoBMainTopView.m; sourceTree = "<group>"; };
+		BB5460CE21F9DACA0048AE01 /* DemoBMainCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoBMainCell.h; sourceTree = "<group>"; };
+		BB5460CF21F9DACA0048AE01 /* HistogramColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistogramColorView.h; sourceTree = "<group>"; };
+		BB5460D321F9DC9C0048AE01 /* HistogramModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistogramModel.h; sourceTree = "<group>"; };
+		BB5460D421F9DC9D0048AE01 /* HistogramModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistogramModel.m; sourceTree = "<group>"; };
 		BB61403821F36F8E00F23C97 /* UIImage+LX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LX.m"; sourceTree = "<group>"; };
 		BB61403921F36F8E00F23C97 /* UIColor+LX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LX.m"; sourceTree = "<group>"; };
 		BB61403A21F36F8E00F23C97 /* UIColor+LX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+LX.h"; sourceTree = "<group>"; };
@@ -393,6 +416,16 @@
 		BB5460AB21F9B9B40048AE01 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BB5460C921F9DACA0048AE01 /* View */,
+				BB5460BF21F9C2990048AE01 /* UIView+Ext.h */,
+				BB5460C021F9C2990048AE01 /* UIView+Ext.m */,
+				BB5460BC21F9C24A0048AE01 /* RPTaggedNavView.h */,
+				BB5460BD21F9C24B0048AE01 /* RPTaggedNavView.m */,
+				BB5460D321F9DC9C0048AE01 /* HistogramModel.h */,
+				BB5460D421F9DC9D0048AE01 /* HistogramModel.m */,
+				BB5460C221F9CB0A0048AE01 /* YHTDateChartView.h */,
+				BB5460C321F9CB0A0048AE01 /* YHTDateChartView.m */,
+				BB5460C721F9D1F70048AE01 /* YHTDateChartView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -405,6 +438,19 @@
 				BB5460AF21F9B9E10048AE01 /* YHTRewardHistoryViewController.xib */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BB5460C921F9DACA0048AE01 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BB5460CA21F9DACA0048AE01 /* DemoBMainCell.m */,
+				BB5460CB21F9DACA0048AE01 /* DemoBMainTopView.h */,
+				BB5460CC21F9DACA0048AE01 /* HistogramColorView.m */,
+				BB5460CD21F9DACA0048AE01 /* DemoBMainTopView.m */,
+				BB5460CE21F9DACA0048AE01 /* DemoBMainCell.h */,
+				BB5460CF21F9DACA0048AE01 /* HistogramColorView.h */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		BB61403E21F3779F00F23C97 /* calendarViewController */ = {
@@ -992,6 +1038,7 @@
 				BB89B7C821F0672D00FA0B9F /* navigationbar_messages_btn_white@3x.png in Resources */,
 				BB5460A521F98A210048AE01 /* icon-arrow1@2x.png in Resources */,
 				BB89B77521F034D500FA0B9F /* tabbar_destination_icon_unselect@2x.png in Resources */,
+				BB5460C821F9D1F70048AE01 /* YHTDateChartView.xib in Resources */,
 				BB97B30521F013E0006C7DD7 /* HomeFlyViewController.xib in Resources */,
 				BB846D9C21E7281700CD912C /* Assets.xcassets in Resources */,
 				BB89B77221F034D500FA0B9F /* tabbar_aboutMe_icon_select@3x.png in Resources */,
@@ -1073,6 +1120,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB5460C421F9CB0A0048AE01 /* YHTDateChartView.m in Sources */,
 				BBC37B3D21F59CF7008EEDBC /* BXHCalendarDayView.m in Sources */,
 				BBC37B3C21F59CF7008EEDBC /* BXHCalendarMonthView.m in Sources */,
 				BB89B7FC21F08F2B00FA0B9F /* NSMutableDictionary+Safe.m in Sources */,
@@ -1098,6 +1146,8 @@
 				BB97B30021F013B6006C7DD7 /* BaseViewController.m in Sources */,
 				BB89B7FE21F08F2B00FA0B9F /* NSDictionary+Safe.m in Sources */,
 				BBC37B3A21F59CF7008EEDBC /* NSDate+BXHCategory.m in Sources */,
+				BB5460D021F9DACA0048AE01 /* DemoBMainCell.m in Sources */,
+				BB5460D521F9DC9D0048AE01 /* HistogramModel.m in Sources */,
 				BBC37B3F21F59CF7008EEDBC /* BXHCalenderIndexPath.m in Sources */,
 				BB61403C21F36F8E00F23C97 /* UIImage+LX.m in Sources */,
 				BBC4322621F96344003272A7 /* DemoMeController.m in Sources */,
@@ -1105,14 +1155,18 @@
 				BBC4321E21F9610D003272A7 /* UIView+XBExtension.m in Sources */,
 				BB61403D21F36F8E00F23C97 /* UIColor+LX.m in Sources */,
 				BBC37B4221F5A41B008EEDBC /* YHTCalendarTopView.m in Sources */,
+				BB5460C121F9C2990048AE01 /* UIView+Ext.m in Sources */,
 				BB846DA221E7281700CD912C /* main.m in Sources */,
 				BBC37B3921F59CF7008EEDBC /* NSDate+BXHCalendar.m in Sources */,
+				BB5460BE21F9C24B0048AE01 /* RPTaggedNavView.m in Sources */,
 				BBC37B3E21F59CF7008EEDBC /* BXHCalendarManager.m in Sources */,
 				BBC4322221F9610D003272A7 /* XBMeHeaderView.m in Sources */,
 				BB846D9421E7281600CD912C /* AppDelegate.mm in Sources */,
 				BB5460B021F9B9E10048AE01 /* YHTRewardHistoryViewController.m in Sources */,
 				BBC4322121F9610D003272A7 /* XBSettingCell.m in Sources */,
+				BB5460D221F9DACA0048AE01 /* DemoBMainTopView.m in Sources */,
 				BBC4320821F8B87D003272A7 /* YHTFlightMapViewController.m in Sources */,
+				BB5460D121F9DACA0048AE01 /* HistogramColorView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

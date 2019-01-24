@@ -65,7 +65,7 @@
         if (_navTitleString && _navTitleString.length > 0) {
             title = _navTitleString;
         }
-        self.navView = [[YHTNavigationView alloc] initWithNavViewFrame:CGRectMake(0, 0, kWindowW, 64) andLeftType:_navLeftType andTitle:title andRightType:_navRightType];
+        self.navView = [[YHTNavigationView alloc] initWithNavViewFrame:CGRectMake(0, 0, kWindowW, NAVIGATION_BAR_HEIGHT) andLeftType:_navLeftType andTitle:title andRightType:_navRightType];
         self.navView.backgroundColor = [UIColor whiteColor];
         [self.view addSubview:self.navView];
     }

@@ -27,6 +27,21 @@
 #define YHTDarkBlueColor [UIColor colorWithHexString:@"#4E5063"]
 
 
+
+#define WTWidth [UIScreen mainScreen].bounds.size.width
+#define WTHeight [UIScreen mainScreen].bounds.size.height
+#define iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+#define STATUS_BAR_HEIGHT (iPhoneX ? 44.f : 20.f)
+#define NAVIGATION_BAR_HEIGHT (iPhoneX ? 88.f : 64.f)
+#define TAB_BAR_HEIGHT (iPhoneX ? (49.f+34.f) : 49.f)
+#define HOME_INDICATOR_HEIGHT (iPhoneX ? 34.f : 0.f)
+#define WTRandomColor [UIColor colorWithRed:arc4random()%255/255.0 green:arc4random()%255/255.0 blue:arc4random()%255/255.0 alpha:1.0f]
+#define WTWeakSelf __weak typeof(self) weakSelf = self
+
+
+
+
+
 //通过Storyboard ID 在对应Storyboard中获取场景对象  （\：换行）
 #define kVCFromSb(storyboardId, storyboardName)     [[UIStoryboard storyboardWithName:storyboardName bundle:nil] \
 instantiateViewControllerWithIdentifier:storyboardId]

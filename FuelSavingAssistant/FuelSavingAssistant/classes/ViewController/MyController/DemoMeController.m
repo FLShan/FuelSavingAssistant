@@ -13,6 +13,7 @@
 #import "XBSettingItemModel.h"
 #import "XBSettingSectionModel.h"
 #import "DemoSettingController.h"
+
 @interface DemoMeController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) XBMeHeaderView *header;
 
@@ -30,12 +31,13 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, kWindowW, self.view.bounds.size.height) style:UITableViewStylePlain];
+    self.navView.backgroundColor = YHTDarkBlueColor;
+    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT, kWindowW, self.view.bounds.size.height) style:UITableViewStylePlain];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
     self.view.backgroundColor = YHTDarkBlueColor;
-    self.tableView.backgroundColor = [UIColor whiteColor];
+    self.tableView.backgroundColor = YHTDarkBlueColor;
     [self setupSections];
     
     XBMeHeaderView *header = [[[NSBundle mainBundle]loadNibNamed:@"XBMeHeaderView" owner:nil options:nil] firstObject];

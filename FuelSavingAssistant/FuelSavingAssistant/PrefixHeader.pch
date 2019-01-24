@@ -19,4 +19,6 @@
 #import "NSDictionary+Safe.h"
 #import "UIColor+LX.h"
 #import <Masonry.h>
+#import "HistogramModel.h"
+
 #endif /* PrefixHeader_pch */
