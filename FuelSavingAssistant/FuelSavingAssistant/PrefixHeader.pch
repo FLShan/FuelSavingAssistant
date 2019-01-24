@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  FuelSavingAssistant
+//
+//  Created by 单方良 on 2019/1/15.
+//  Copyright © 2019年 Aero. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+//最低只需传两个数组即可完成tabBar搭建
+#import <CYLTabBarController.h>
+//存放全局宏定义
+#import "Const.h"
+#import "YHTNavigationView.h"
+#import "NSDictionary+Safe.h"
+#import "UIColor+LX.h"
+#import <Masonry.h>
+#endif /* PrefixHeader_pch */
