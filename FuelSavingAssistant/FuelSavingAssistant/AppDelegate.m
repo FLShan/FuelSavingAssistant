@@ -12,9 +12,10 @@
 #import "communityViewController.h"
 #import "myViewController.h"
 #import "DemoMeController.h"
+
 #import <BaiduMapAPI_Base/BMKBaseComponent.h>//引入base相关所有的头文件
 
-@interface AppDelegate ()
+@interface AppDelegate ()<BMKGeneralDelegate>
 @property (nonatomic, strong) BMKMapManager *mapManager; //主引擎类
 @end
 
@@ -24,36 +25,17 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     // 要使用百度地图，请先启动BaiduMapManager
-//    _mapManager = [[BMKMapManager alloc] init];
-//    // 如果要关注网络及授权验证事件，请设定generalDelegate参数
-//    BOOL ret = [_mapManager start:@"jkZxKK2iRYqCanGV4YPbcjOZuLlwmERL"  generalDelegate:nil];
-//    if (!ret) {
-//        NSLog(@"manager start failed!");
-//    }
-    
-    //设置为GCJ02坐标
-//    [BMKMapManager setCoordinateTypeUsedInBaiduMapSDK:BMK_COORDTYPE_COMMON];
-    
-//    [[BMKLocationAuth sharedInstance] checkPermisionWithKey:@"jkZxKK2iRYqCanGV4YPbcjOZuLlwmERL" authDelegate:self];
-    //要使用百度地图，请先启动BMKMapManager
     _mapManager = [[BMKMapManager alloc] init];
-    
-    /**
-     百度地图SDK所有API均支持百度坐标（BD09）和国测局坐标（GCJ02），用此方法设置您使用的坐标类型.
-     默认是BD09（BMK_COORDTYPE_BD09LL）坐标.
-     如果需要使用GCJ02坐标，需要设置CoordinateType为：BMK_COORDTYPE_COMMON.
-     */
-    if ([BMKMapManager setCoordinateTypeUsedInBaiduMapSDK:BMK_COORDTYPE_BD09LL]) {
-        NSLog(@"经纬度类型设置成功");
-    } else {
-        NSLog(@"经纬度类型设置失败");
+    // 如果要关注网络及授权验证事件，请设定generalDelegate参数
+    BOOL ret = [_mapManager start:@"jkZxKK2iRYqCanGV4YPbcjOZuLlwmERL"  generalDelegate:self];
+    if (!ret) {
+        NSLog(@"manager start failed!");
     }
+    //设置为GCJ02坐标
+    [BMKMapManager setCoordinateTypeUsedInBaiduMapSDK: BMK_COORDTYPE_COMMON];
+  
     
-    //启动引擎并设置AK并设置delegate
-    BOOL result = [_mapManager start:@"jkZxKK2iRYqCanGV4YPbcjOZuLlwmERL" generalDelegate:nil];
-    if (!result) {
-        NSLog(@"启动引擎失败");
-    }
+   
     
     
     [self setupViewControllers];

@@ -13,7 +13,7 @@
 #import "BXHCalendarView.h"
 #import "NSDate+BXHCalendar.h"
 #import "NSDate+BXHCategory.h"
-//#import "YHTFuelReportViewController.h"
+#import "YHTBeforReportViewController.h"
 #import "YHTFlightMapViewController.h"
 #import "YHTRewardHistoryViewController.h"
 
@@ -97,7 +97,7 @@
     }
     cell.DidClickStateBtnBlock = ^(){
         NSLog(@"代码块中进入x数据节油报告");
-        YHTRewardHistoryViewController *reportVC = [[YHTRewardHistoryViewController alloc]initWithNibName:@"YHTRewardHistoryViewController" bundle:nil];
+        YHTBeforReportViewController *reportVC = [[YHTBeforReportViewController alloc]initWithNibName:@"YHTBeforReportViewController" bundle:nil];
         [self.navigationController pushViewController:reportVC animated:YES];
     };
     return cell;

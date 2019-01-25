@@ -1,8 +1,8 @@
 //
-//  YHTFlightMapViewController.h
+//  YHTBeforReportViewController.h
 //  FuelSavingAssistant
 //
-//  Created by 单方良 on 2019/1/23.
+//  Created by 单方良 on 2019/1/24.
 //  Copyright © 2019 Aero. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YHTFlightMapViewController : BaseViewController
+@interface YHTBeforReportViewController : BaseViewController
 
 @end
 

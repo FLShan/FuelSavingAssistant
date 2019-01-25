@@ -20,6 +20,8 @@
 		BB3592B021F76C4B009948CE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB3592AF21F76C4B009948CE /* QuartzCore.framework */; };
 		BB3592B221F76C54009948CE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB3592B121F76C54009948CE /* Security.framework */; };
 		BB3592B421F76C5E009948CE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB3592B321F76C5E009948CE /* SystemConfiguration.framework */; };
+		BB4B559B21FA120D00EC6A5C /* YHTBeforTableHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4B559A21FA120D00EC6A5C /* YHTBeforTableHeader.m */; };
+		BB4B559D21FA2DE700EC6A5C /* BMKLocationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB4B559C21FA2DE700EC6A5C /* BMKLocationKit.framework */; };
 		BB5460A521F98A210048AE01 /* icon-arrow1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB5460A421F98A210048AE01 /* icon-arrow1@2x.png */; };
 		BB5460A721F99BC70048AE01 /* head.png in Resources */ = {isa = PBXBuildFile; fileRef = BB5460A621F99BC60048AE01 /* head.png */; };
 		BB5460B021F9B9E10048AE01 /* YHTRewardHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5460AE21F9B9E10048AE01 /* YHTRewardHistoryViewController.m */; };
@@ -32,11 +34,13 @@
 		BB5460D121F9DACA0048AE01 /* HistogramColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5460CC21F9DACA0048AE01 /* HistogramColorView.m */; };
 		BB5460D221F9DACA0048AE01 /* DemoBMainTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5460CD21F9DACA0048AE01 /* DemoBMainTopView.m */; };
 		BB5460D521F9DC9D0048AE01 /* HistogramModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5460D421F9DC9D0048AE01 /* HistogramModel.m */; };
+		BB5460DD21FA01A40048AE01 /* YHTBeforReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5460DB21FA01A40048AE01 /* YHTBeforReportViewController.m */; };
+		BB5460DE21FA01A40048AE01 /* YHTBeforReportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB5460DC21FA01A40048AE01 /* YHTBeforReportViewController.xib */; };
 		BB61403C21F36F8E00F23C97 /* UIImage+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = BB61403821F36F8E00F23C97 /* UIImage+LX.m */; };
 		BB61403D21F36F8E00F23C97 /* UIColor+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = BB61403921F36F8E00F23C97 /* UIColor+LX.m */; };
 		BB7B40AB21F6B04600DFFF19 /* YHTMyDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7B40A921F6B04600DFFF19 /* YHTMyDataViewController.m */; };
 		BB7B40AC21F6B04600DFFF19 /* YHTMyDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB7B40AA21F6B04600DFFF19 /* YHTMyDataViewController.xib */; };
-		BB846D9421E7281600CD912C /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = BB846D9321E7281600CD912C /* AppDelegate.mm */; };
+		BB846D9421E7281600CD912C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB846D9321E7281600CD912C /* AppDelegate.m */; };
 		BB846D9721E7281600CD912C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB846D9621E7281600CD912C /* ViewController.m */; };
 		BB846D9A21E7281600CD912C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB846D9821E7281600CD912C /* Main.storyboard */; };
 		BB846D9C21E7281700CD912C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB846D9B21E7281700CD912C /* Assets.xcassets */; };
@@ -158,6 +162,9 @@
 		BB3592AF21F76C4B009948CE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BB3592B121F76C54009948CE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		BB3592B321F76C5E009948CE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BB4B559921FA120D00EC6A5C /* YHTBeforTableHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHTBeforTableHeader.h; sourceTree = "<group>"; };
+		BB4B559A21FA120D00EC6A5C /* YHTBeforTableHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHTBeforTableHeader.m; sourceTree = "<group>"; };
+		BB4B559C21FA2DE700EC6A5C /* BMKLocationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BMKLocationKit.framework; path = "../../../../../../../Downloads/BaiduMap_IOSSDK_v4.2.1-Output/BaiduMap_IOSSDK_v4.2.1_Sample 2/BMKObjectiveCDemo/Frameworks/BMKLocationKit.framework"; sourceTree = "<group>"; };
 		BB5460A421F98A210048AE01 /* icon-arrow1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-arrow1@2x.png"; sourceTree = "<group>"; };
 		BB5460A621F99BC60048AE01 /* head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = head.png; sourceTree = "<group>"; };
 		BB5460AD21F9B9E10048AE01 /* YHTRewardHistoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHTRewardHistoryViewController.h; sourceTree = "<group>"; };
@@ -178,6 +185,9 @@
 		BB5460CF21F9DACA0048AE01 /* HistogramColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistogramColorView.h; sourceTree = "<group>"; };
 		BB5460D321F9DC9C0048AE01 /* HistogramModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistogramModel.h; sourceTree = "<group>"; };
 		BB5460D421F9DC9D0048AE01 /* HistogramModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistogramModel.m; sourceTree = "<group>"; };
+		BB5460DA21FA01A40048AE01 /* YHTBeforReportViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHTBeforReportViewController.h; sourceTree = "<group>"; };
+		BB5460DB21FA01A40048AE01 /* YHTBeforReportViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHTBeforReportViewController.m; sourceTree = "<group>"; };
+		BB5460DC21FA01A40048AE01 /* YHTBeforReportViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YHTBeforReportViewController.xib; sourceTree = "<group>"; };
 		BB61403821F36F8E00F23C97 /* UIImage+LX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LX.m"; sourceTree = "<group>"; };
 		BB61403921F36F8E00F23C97 /* UIColor+LX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LX.m"; sourceTree = "<group>"; };
 		BB61403A21F36F8E00F23C97 /* UIColor+LX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+LX.h"; sourceTree = "<group>"; };
@@ -187,7 +197,7 @@
 		BB7B40AA21F6B04600DFFF19 /* YHTMyDataViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YHTMyDataViewController.xib; sourceTree = "<group>"; };
 		BB846D8F21E7281600CD912C /* FuelSavingAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuelSavingAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB846D9221E7281600CD912C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		BB846D9321E7281600CD912C /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		BB846D9321E7281600CD912C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BB846D9521E7281600CD912C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		BB846D9621E7281600CD912C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BB846D9921E7281600CD912C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -354,6 +364,7 @@
 				BB3592A321F76BF9009948CE /* CoreGraphics.framework in Frameworks */,
 				BBC431F621F8B524003272A7 /* libcrypto.a in Frameworks */,
 				AA519FB4C9AD033780D2E9AD /* libPods-FuelSavingAssistant.a in Frameworks */,
+				BB4B559D21FA2DE700EC6A5C /* BMKLocationKit.framework in Frameworks */,
 				BBC431F521F8B524003272A7 /* BaiduMapAPI_Map.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,6 +464,39 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		BB5460D621FA01560048AE01 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BB5460D721FA01560048AE01 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BB5460DA21FA01A40048AE01 /* YHTBeforReportViewController.h */,
+				BB5460DB21FA01A40048AE01 /* YHTBeforReportViewController.m */,
+				BB5460DC21FA01A40048AE01 /* YHTBeforReportViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BB5460D821FA01570048AE01 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BB4B559921FA120D00EC6A5C /* YHTBeforTableHeader.h */,
+				BB4B559A21FA120D00EC6A5C /* YHTBeforTableHeader.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BB5460D921FA01570048AE01 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		BB61403E21F3779F00F23C97 /* calendarViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -470,6 +514,10 @@
 		BB7B409921F6AB8800DFFF19 /* FuelReport */ = {
 			isa = PBXGroup;
 			children = (
+				BB5460D621FA01560048AE01 /* Model */,
+				BB5460D821FA01570048AE01 /* View */,
+				BB5460D721FA01560048AE01 /* ViewController */,
+				BB5460D921FA01570048AE01 /* ViewModel */,
 			);
 			path = FuelReport;
 			sourceTree = "<group>";
@@ -541,7 +589,7 @@
 			children = (
 				BB97B2EE21F0135F006C7DD7 /* classes */,
 				BB846D9221E7281600CD912C /* AppDelegate.h */,
-				BB846D9321E7281600CD912C /* AppDelegate.mm */,
+				BB846D9321E7281600CD912C /* AppDelegate.m */,
 				BB846D9521E7281600CD912C /* ViewController.h */,
 				BB846D9621E7281600CD912C /* ViewController.m */,
 				BB846D9821E7281600CD912C /* Main.storyboard */,
@@ -850,6 +898,7 @@
 		BBC431EA21F8B524003272A7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BB4B559C21FA2DE700EC6A5C /* BMKLocationKit.framework */,
 				BBC431EB21F8B524003272A7 /* BaiduMapAPI_Map.framework */,
 				BBC431EC21F8B524003272A7 /* thirdlibs */,
 				BBC431EF21F8B524003272A7 /* BaiduMapAPI_Utils.framework */,
@@ -1051,6 +1100,7 @@
 				BB89B78621F0477300FA0B9F /* studyViewController.xib in Resources */,
 				BB89B7AE21F0672D00FA0B9F /* navigationbar_settings_btn_white@3x.png in Resources */,
 				BB89B77B21F034D500FA0B9F /* tabbar_shopList_icon_unselect@2x.png in Resources */,
+				BB5460DE21FA01A40048AE01 /* YHTBeforReportViewController.xib in Resources */,
 				BB89B7C221F0672D00FA0B9F /* navigationbar_share_btn_white@2x.png in Resources */,
 				BB89B7AD21F0672D00FA0B9F /* navigationbar_shopList_btn_black@2x.png in Resources */,
 				BB89B76B21F034D500FA0B9F /* tabbar_GPC_icon_unselect@2x.png in Resources */,
@@ -1127,6 +1177,7 @@
 				BB89B7F021F0854000FA0B9F /* YHTBaseModel.m in Sources */,
 				BB89B78521F0477300FA0B9F /* studyViewController.m in Sources */,
 				BBC37B3B21F59CF7008EEDBC /* BXHWeekendView.m in Sources */,
+				BB5460DD21FA01A40048AE01 /* YHTBeforReportViewController.m in Sources */,
 				BB89B80121F17A0C00FA0B9F /* YHTTopBarView.m in Sources */,
 				BB846D9721E7281600CD912C /* ViewController.m in Sources */,
 				BB7B40AB21F6B04600DFFF19 /* YHTMyDataViewController.m in Sources */,
@@ -1152,6 +1203,7 @@
 				BB61403C21F36F8E00F23C97 /* UIImage+LX.m in Sources */,
 				BBC4322621F96344003272A7 /* DemoMeController.m in Sources */,
 				BBC4321F21F9610D003272A7 /* XBSettingItemModel.m in Sources */,
+				BB4B559B21FA120D00EC6A5C /* YHTBeforTableHeader.m in Sources */,
 				BBC4321E21F9610D003272A7 /* UIView+XBExtension.m in Sources */,
 				BB61403D21F36F8E00F23C97 /* UIColor+LX.m in Sources */,
 				BBC37B4221F5A41B008EEDBC /* YHTCalendarTopView.m in Sources */,
@@ -1161,7 +1213,7 @@
 				BB5460BE21F9C24B0048AE01 /* RPTaggedNavView.m in Sources */,
 				BBC37B3E21F59CF7008EEDBC /* BXHCalendarManager.m in Sources */,
 				BBC4322221F9610D003272A7 /* XBMeHeaderView.m in Sources */,
-				BB846D9421E7281600CD912C /* AppDelegate.mm in Sources */,
+				BB846D9421E7281600CD912C /* AppDelegate.m in Sources */,
 				BB5460B021F9B9E10048AE01 /* YHTRewardHistoryViewController.m in Sources */,
 				BBC4322121F9610D003272A7 /* XBSettingCell.m in Sources */,
 				BB5460D221F9DACA0048AE01 /* DemoBMainTopView.m in Sources */,
