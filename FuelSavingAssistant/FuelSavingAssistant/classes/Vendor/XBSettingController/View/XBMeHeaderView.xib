@@ -32,11 +32,12 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYH-ns-bDX">
-                            <rect key="frame" x="184.5" y="111.5" width="78" height="24"/>
+                            <rect key="frame" x="184.5" y="113.5" width="70" height="20"/>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                            <state key="normal" title="我的徽章" image="aboutMe_favoriteShop_btn_login.png">
-                                <color key="titleColor" red="0.94454896450042725" green="0.59921497106552124" blue="0.034595783799886703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </state>
+                            <state key="normal" image="ico徽章0-01.png"/>
+                            <connections>
+                                <action selector="gotohuizhangVC:" destination="eTH-sl-u7g" eventType="touchUpInside" id="c2B-Nv-60C"/>
+                            </connections>
                         </button>
                     </subviews>
                     <constraints>
@@ -66,6 +67,9 @@
                             <state key="normal" title="专属特权" image="icon-arrow1.png">
                                 <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
+                            <connections>
+                                <action selector="levelBtn:" destination="eTH-sl-u7g" eventType="touchUpInside" id="mUh-Jx-l84"/>
+                            </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="节油大咖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phi-bG-tU3">
                             <rect key="frame" x="20" y="65" width="57.5" height="17"/>
@@ -146,11 +150,19 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7r-Fh-uYe">
-                            <rect key="frame" x="357" y="10.5" width="8" height="16"/>
+                            <rect key="frame" x="251" y="-1.5" width="114" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="nsk-sN-SOG"/>
+                                <constraint firstAttribute="width" constant="114" id="z4Z-nK-C0D"/>
+                            </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <inset key="imageEdgeInsets" minX="90" minY="0.0" maxX="0.0" maxY="0.0"/>
                             <state key="normal" image="icon-arrow1.png">
                                 <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
+                            <connections>
+                                <action selector="mydataClick:" destination="eTH-sl-u7g" eventType="touchUpInside" id="ahg-zU-knS"/>
+                            </connections>
                         </button>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PzB-U0-Yfr">
                             <rect key="frame" x="0.0" y="148.5" width="375" height="91.5"/>
@@ -164,14 +176,14 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="425" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3l-qq-UYt">
-                                            <rect key="frame" x="10" y="37" width="40.5" height="27"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="786" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3l-qq-UYt">
+                                            <rect key="frame" x="10" y="37" width="41" height="27"/>
                                             <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="24"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SwE-F4-KOp">
-                                            <rect key="frame" x="60.5" y="46.5" width="12.5" height="14.5"/>
+                                            <rect key="frame" x="61" y="46.5" width="12.5" height="14.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -197,7 +209,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3425" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4uc-Pe-hHP">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2412" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4uc-Pe-hHP">
                                             <rect key="frame" x="10" y="37" width="54" height="27"/>
                                             <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="24"/>
                                             <nil key="textColor"/>
@@ -229,7 +241,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8425" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WN6-u4-tNd">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5786" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WN6-u4-tNd">
                                             <rect key="frame" x="10" y="37" width="54" height="27"/>
                                             <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="24"/>
                                             <nil key="textColor"/>
@@ -423,14 +435,15 @@
                 <outlet property="header" destination="uNv-RS-mZM" id="WAR-E3-Kgf"/>
                 <outlet property="leftView" destination="4Wp-gh-tEG" id="xq5-kV-BPj"/>
                 <outlet property="midView" destination="hUD-Nm-3zJ" id="8j4-JW-StD"/>
+                <outlet property="mydataBtn" destination="O7r-Fh-uYe" id="dIP-I3-l1p"/>
                 <outlet property="rightView" destination="2Nl-iB-4QY" id="12B-c7-Ffr"/>
             </connections>
-            <point key="canvasLocation" x="240.80000000000001" y="330.58470764617692"/>
+            <point key="canvasLocation" x="-194.40000000000001" y="268.51574212893553"/>
         </view>
     </objects>
     <resources>
-        <image name="aboutMe_favoriteShop_btn_login.png" width="24" height="24"/>
         <image name="head.png" width="640" height="640"/>
         <image name="icon-arrow1.png" width="8" height="13"/>
+        <image name="ico徽章0-01.png" width="70" height="20"/>
     </resources>
 </document>

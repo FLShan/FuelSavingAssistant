@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-typedef void(^DidClickStateBtnBlock)();
+#import "YHTHomeFlyModel.h"
+
+typedef void(^DidClickStateBtnBlock)(YHTHomeFlyModelItem* item);
 
 @interface YHTFlightListTableViewCell : UITableViewCell
 @property (nonatomic, copy)DidClickStateBtnBlock DidClickStateBtnBlock;
+
+- (void)freshFlightListCellWith:(YHTHomeFlyModelItem *)item;
 
 @end

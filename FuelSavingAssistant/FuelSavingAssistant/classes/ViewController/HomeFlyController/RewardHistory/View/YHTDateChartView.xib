@@ -17,7 +17,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GyU-I0-p3Y">
-                    <rect key="frame" x="0.0" y="367" width="375" height="300"/>
+                    <rect key="frame" x="0.0" y="395" width="375" height="272"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本月航段" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSF-EW-KgF">
                             <rect key="frame" x="10" y="10" width="57.5" height="17"/>
@@ -179,9 +179,15 @@
                         <constraint firstItem="YMm-vM-iNi" firstAttribute="top" secondItem="TKQ-QV-Jdh" secondAttribute="bottom" constant="10" id="m9n-ih-hXv"/>
                         <constraint firstItem="Ko4-Hd-67o" firstAttribute="leading" secondItem="TKQ-QV-Jdh" secondAttribute="trailing" constant="2" id="nJe-vq-eVC"/>
                         <constraint firstItem="m2a-kW-1PQ" firstAttribute="height" secondItem="fia-8t-mHn" secondAttribute="height" id="sAc-m2-uRu"/>
-                        <constraint firstAttribute="height" constant="300" id="u9w-By-O7l"/>
                         <constraint firstItem="m2a-kW-1PQ" firstAttribute="leading" secondItem="fia-8t-mHn" secondAttribute="trailing" constant="20" id="ulo-nG-APp"/>
                         <constraint firstAttribute="trailing" secondItem="O6v-yO-7r5" secondAttribute="trailing" constant="40" id="wg0-FR-jl1"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rEa-ec-0LG">
+                    <rect key="frame" x="0.0" y="20" width="375" height="375"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="rEa-ec-0LG" secondAttribute="height" multiplier="1:1" id="PZ7-nb-g1e"/>
                     </constraints>
                 </view>
             </subviews>
@@ -189,11 +195,16 @@
             <constraints>
                 <constraint firstItem="GyU-I0-p3Y" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="0xa-uq-Cwb"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="GyU-I0-p3Y" secondAttribute="bottom" id="2rz-y9-BAM"/>
+                <constraint firstItem="rEa-ec-0LG" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="N4D-JO-ezJ"/>
+                <constraint firstItem="GyU-I0-p3Y" firstAttribute="top" secondItem="rEa-ec-0LG" secondAttribute="bottom" id="OD3-If-xDo"/>
+                <constraint firstItem="rEa-ec-0LG" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="cNW-MO-EYI"/>
                 <constraint firstItem="GyU-I0-p3Y" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="qJH-Gt-yQm"/>
+                <constraint firstItem="rEa-ec-0LG" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="qsl-68-UYq"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="bottomView" destination="GyU-I0-p3Y" id="ESB-En-4Vv"/>
+                <outlet property="upView" destination="rEa-ec-0LG" id="ukg-M2-aPt"/>
             </connections>
             <point key="canvasLocation" x="423.19999999999999" y="129.98500749625188"/>
         </view>

@@ -38,6 +38,7 @@
         [self createItemsView];
         
         self.backgroundColor = [UIColor clearColor];
+        [self.middleBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         
         [self.middleBtn setTitle:title forState:UIControlStateNormal];
         
@@ -98,7 +99,7 @@
     self.middleBtn.userInteractionEnabled = YES;
     self.middleBtn.backgroundColor = [UIColor clearColor];
     [self.middleBtn setTitleColor:UIColorFromRGBA(0x333333,0.0f) forState:UIControlStateNormal];
-    self.middleBtn.frame = CGRectMake(BTNWIDTH, 20, CGRectGetWidth([UIScreen mainScreen].bounds) -BTNWIDTH*2, BTNWIDTH);
+    self.middleBtn.frame = CGRectMake(BTNWIDTH, LEFT_BTN_POSITION, CGRectGetWidth([UIScreen mainScreen].bounds) -BTNWIDTH*2, BTNWIDTH);
     
     _searchBackView = [[UIView alloc] initWithFrame:CGRectMake([[UIScreen mainScreen] bounds].size.width - (BTNWIDTH)/2,32, 30 ,30)];
     _searchBackView.layer.masksToBounds = YES;
@@ -131,7 +132,7 @@
 //创建每一个选项
 -(UIButton *)getButtonWithIndex:(int)index{
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.frame = CGRectMake([self getXWithIndex:index], 20, BTNWIDTH, BTNWIDTH);
+    btn.frame = CGRectMake([self getXWithIndex:index], LEFT_BTN_POSITION, BTNWIDTH, BTNWIDTH);
     btn.titleLabel.font = [UIFont systemFontOfSize:16];
     btn.backgroundColor = [UIColor clearColor];
     btn.imageEdgeInsets = UIEdgeInsetsMake(BTNWIDTH/4, BTNWIDTH/4, BTNWIDTH/4, BTNWIDTH/4);
@@ -177,7 +178,7 @@
             break;
         case navViewLeftButtonTypeWhiteBack://白色
         {
-            [self.leftBtn setImage:[UIImage imageNamed:@"navigationbar_dismiss_btn_white"] forState:UIControlStateNormal];
+            [self.leftBtn setImage:[UIImage imageNamed:@"arrow_white"] forState:UIControlStateNormal];
         }
             break;
         case navViewLeftButtonTypeSystemSetting://
@@ -221,7 +222,7 @@
             break;
         case navViewRightButtonTypeMessage:
         {
-            [self.rightBtn setImage:[UIImage imageNamed:@"navigationbar_messages_btn_white"] forState:UIControlStateNormal];
+            [self.rightBtn setImage:[UIImage imageNamed:@"ico-02"] forState:UIControlStateNormal];
         }
             break;
         case navViewRightButtonTypeSearch:

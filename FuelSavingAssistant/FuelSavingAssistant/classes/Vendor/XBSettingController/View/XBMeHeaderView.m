@@ -20,6 +20,8 @@
 @property (strong, nonatomic) IBOutlet UIView *midView;
 
 @property (strong, nonatomic) IBOutlet UIView *rightView;
+@property (strong, nonatomic) IBOutlet UIButton *mydataBtn;
+
 
 @end
 @implementation XBMeHeaderView
@@ -85,6 +87,21 @@
     }
 }
 
+- (IBAction)mydataClick:(id)sender {
+    if ([self.delegate respondsToSelector:@selector(gotoMydata)]) {
+        [self.delegate gotoMydata];
+    }
+}
+- (IBAction)gotohuizhangVC:(id)sender {
+    if ([self.delegate respondsToSelector:@selector(gotoEmblemViewController)]) {
+        [self.delegate gotoEmblemViewController];
+    }
+}
+- (IBAction)levelBtn:(id)sender {
+    if ([self.delegate respondsToSelector:@selector(gotoLevelViewController)]) {
+        [self.delegate gotoLevelViewController];
+    }
+}
 
 
 - (void)setupHeaderCircle

@@ -7,10 +7,11 @@
 //
 
 #import "YHTCalendarTopView.h"
+
+#import "NSDate+BXHCalendar.h"
+#import "NSDate+BXHCategory.h"
 @interface YHTCalendarTopView()
 @property (nonatomic, strong) UILabel *midTitleLabel;
-@property (nonatomic, strong) UILabel *rightTitleLabel;
-@property (nonatomic, strong) UILabel *leftTitleLabel;
 @end
 @implementation YHTCalendarTopView
 
@@ -30,38 +31,17 @@
     return self;
 }
 - (void)setupView{
-    self.midTitleLabel = [[UILabel alloc]initWithFrame:CGRectMake((kWindowW-80)/2, 0, 80, 80)];
+    self.midTitleLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame))];
     self.midTitleLabel.textAlignment = NSTextAlignmentCenter;
-    self.rightTitleLabel = [[UILabel alloc]init];
-    self.leftTitleLabel = [[UILabel alloc]init];
-    self.midTitleLabel.text = @"一月";
-    self.rightTitleLabel.text = @"二月";
-    self.leftTitleLabel.text = @"十二月";
-    self.midTitleLabel.textColor = [UIColor blackColor];
-    self.rightTitleLabel.textColor = [UIColor blackColor];
-    self.leftTitleLabel.textColor = [UIColor blackColor];
-    [self addSubview:self.midTitleLabel];
-    [self addSubview:self.midTitleLabel];
-    [self addSubview:self.midTitleLabel];
-    [self.midTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.centerY.mas_equalTo(self.center.y);
-//        make.centerX.mas_equalTo(self.center.x);
-//        make.height.mas_equalTo(self.frame.size.height);
-//        make.height.mas_equalTo(40);
-//        make.leading.mas_equalTo(20);
-//        make.centerY.mas_equalTo(self.center.y);
-        
-    }];
-    [self.rightTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.centerY.mas_equalTo(self.center.y);
-//        make.height.mas_equalTo(self.frame.size.height);
-//        make.leading.mas_equalTo(20);
-    }];
-    [self.leftTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.centerY.mas_equalTo(self.center.y);
-//        make.height.mas_equalTo(self.frame.size.height);
-//        make.trailing.mas_equalTo(20);
-    }];
+    self.midTitle = [NSString stringWithFormat:@"%@",[[NSDate date] bxh_stringWithFormate:@"yyyy-MM"]];
+    self.midTitleLabel.text = self.midTitle;
     
+    self.midTitleLabel.textColor = [UIColor blackColor];
+    
+    [self addSubview:self.midTitleLabel];
+    
+}
+- (void)setMidTitle:(NSString *)midTitle{
+    _midTitleLabel.text = midTitle;
 }
 @end

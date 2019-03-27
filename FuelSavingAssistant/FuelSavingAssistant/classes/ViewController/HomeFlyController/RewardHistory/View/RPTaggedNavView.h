@@ -23,6 +23,7 @@
  *  数据源
  */
 @property (nonatomic, strong) NSArray * dataArr;
+@property (nonatomic, assign) BOOL isGreen;
 /**
  *  标签文字颜色_未选中时
  */

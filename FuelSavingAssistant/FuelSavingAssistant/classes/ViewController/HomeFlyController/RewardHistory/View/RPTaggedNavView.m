@@ -17,7 +17,6 @@
 #define DefaultSliderH 1
 #define DefaultSliderW 30
 
-#define WTWeakSelf __weak typeof(self) weakSelf = self
 
 @interface RPTaggedNavView ()
 
@@ -56,7 +55,12 @@
     for (int i = 0 ; i < _dataArr.count ; i++) {
         UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(i * width, 0, width, self.height)];
         button.tag = 1000+i;
-        button.backgroundColor = YHTDarkBlueColor;
+        if (_isGreen == YES) {
+            button.backgroundColor = [UIColor whiteColor];
+        }else{
+            button.backgroundColor = YHTDarkBlueColor;
+        }
+        
         [button setTitle:[_dataArr objectAtIndex:i] forState:UIControlStateNormal];
         [button setTitleColor:self.tagTextColor_normal forState:UIControlStateNormal];
         [button setTitleColor:self.tagTextColor_selected forState:UIControlStateSelected];

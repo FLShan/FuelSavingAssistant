@@ -13,8 +13,16 @@
 #import "XBSettingItemModel.h"
 #import "XBSettingSectionModel.h"
 #import "DemoSettingController.h"
+#import "YHTMyDataViewController.h"
+#import "YHTEmblemViewController.h"
+#import "YHTLevelViewController.h"
+#import "YHTSystemSettingViewController.h"
+#import "YHTkefuViewController.h"
 
-@interface DemoMeController ()<UITableViewDelegate,UITableViewDataSource>
+
+
+
+@interface DemoMeController ()<UITableViewDelegate,UITableViewDataSource,XBMeHeaderViewDelegate>
 @property (nonatomic,strong) XBMeHeaderView *header;
 
 
@@ -25,14 +33,14 @@
 
 @implementation DemoMeController
 + (UINavigationController *)defaultMyNavi {
-    DemoMeController *vc = [DemoMeController new];
+    DemoMeController *vc = [[DemoMeController alloc]initWithLeftType:navViewLeftButtonTypeSystemSetting andTitle:@"" andRightType:navViewRightButtonTypeNone];
     UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
     return navi;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navView.backgroundColor = YHTDarkBlueColor;
-    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT, kWindowW, self.view.bounds.size.height) style:UITableViewStylePlain];
+    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT, kWindowW, self.view.bounds.size.height - NAVIGATION_BAR_HEIGHT) style:UITableViewStylePlain];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
@@ -42,6 +50,7 @@
     
     XBMeHeaderView *header = [[[NSBundle mainBundle]loadNibNamed:@"XBMeHeaderView" owner:nil options:nil] firstObject];
     self.header = header;
+    self.header.delegate = self;
     self.tableView.tableHeaderView = header;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;     //让tableview不显示分割线
 }
@@ -117,6 +126,9 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     XBSettingSectionModel *sectionModel = self.sectionArray[indexPath.section];
     XBSettingItemModel *itemModel = sectionModel.itemArray[indexPath.row];
+    if ([itemModel.funcName isEqualToString:@"客服中心"]) {
+        [self gotoKefuzhongxin];
+    }
     if (itemModel.executeCode) {
         itemModel.executeCode();
     }
@@ -131,5 +143,36 @@
     } else if (scrollView.contentOffset.y>=sectionHeaderHeight) {
         scrollView.contentInset = UIEdgeInsetsMake(-sectionHeaderHeight, 0, 0, 0);
     }
+}
+- (void)gotoMydata{
+    YHTMyDataViewController *reportVC = [[YHTMyDataViewController alloc]initWithNibName:@"YHTMyDataViewController" bundle:nil LeftType:navViewLeftButtonTypeWhiteBack andTitle:@"我的数据" andRightType:navViewRightButtonTypeNone];
+    [reportVC setHidesBottomBarWhenPushed:YES];
+    [self.navigationController pushViewController:reportVC animated:YES];
+}
+
+- (void)gotoEmblemViewController{
+    YHTEmblemViewController *reportVC = [[YHTEmblemViewController alloc]initWithNibName:@"YHTEmblemViewController" bundle:nil LeftType:navViewLeftButtonTypeWhiteBack andTitle:@"我的徽章" andRightType:navViewRightButtonTypeNone];
+    [reportVC setHidesBottomBarWhenPushed:YES];
+    [self.navigationController pushViewController:reportVC animated:YES];
+}
+
+- (void)gotoLevelViewController{
+    YHTLevelViewController *reportVC = [[YHTLevelViewController alloc]initWithNibName:@"YHTLevelViewController" bundle:nil LeftType:navViewLeftButtonTypeWhiteBack andTitle:@"我的节油等级" andRightType:navViewRightButtonTypeNone];
+    [reportVC setHidesBottomBarWhenPushed:YES];
+    [self.navigationController pushViewController:reportVC animated:YES];
+}
+
+-(void)navLeftButtonClicked:(id)sender
+{
+    NSLog(@"wqwqwqwqwqwqwq");
+    
+    YHTSystemSettingViewController *reportVC = [[YHTSystemSettingViewController alloc]initWithNibName:@"YHTSystemSettingViewController" bundle:nil LeftType:navViewLeftButtonTypeDefault andTitle:@"系统设置" andRightType:navViewRightButtonTypeNone];
+    [reportVC setHidesBottomBarWhenPushed:YES];
+    [self.navigationController pushViewController:reportVC animated:YES];
+}
+- (void)gotoKefuzhongxin{
+    YHTkefuViewController *reportVC = [[YHTkefuViewController alloc]initWithNibName:@"YHTkefuViewController" bundle:nil LeftType:navViewLeftButtonTypeDefault andTitle:@"客服中心" andRightType:navViewRightButtonTypeNone];
+    [reportVC setHidesBottomBarWhenPushed:YES];
+    [self.navigationController pushViewController:reportVC animated:YES];
 }
 @end

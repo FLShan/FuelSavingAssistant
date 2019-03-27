@@ -17,22 +17,23 @@
 
 -(void)awakeFromNib{
     [super awakeFromNib];
-    _navRightType = navViewRightButtonTypeShare;
+    _navRightType = navViewRightButtonTypeNone;
     _navLeftType = navViewLeftButtonTypeNone;
 }
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil LeftType:(navViewLeftButtonType)left andTitle:(NSString*)title andRightType:(navViewRightButtonType)right
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        _navRightType = navViewRightButtonTypeMessage;
-        _navLeftType = navViewLeftButtonTypeWhiteBack;
+        _navLeftType = left;
+        _navRightType = right;
+        _navTitleString = title;
     }
     return self;
 }
 
--(id)initWithLeftType:(navViewLeftButtonType)left andTitle:(NSString*)title andRightType:(navViewRightButtonType)right
+-(id)initWithLeftType:(navViewLeftButtonType)left andTitle:(NSString*)title andRightType:(navViewRightButtonType)right 
 {
     self = [super init];
     if (self) {

@@ -21,6 +21,13 @@ typedef NS_ENUM(NSInteger, XBMeHeaderViewButtonType) {
 
 - (void)XBMeHeaderViewBtnClicked:(XBMeHeaderViewButtonType)type;
 
+- (void)gotoMydata;
+
+- (void)gotoEmblemViewController;
+
+- (void)gotoLevelViewController;
+
+
 @end
 
 @interface XBMeHeaderView : UIView

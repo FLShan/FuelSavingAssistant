@@ -17,6 +17,7 @@
 @property (nonatomic, strong) DemoBMainTopView *topView;
 //@property (strong, nonatomic) IBOutlet DemoBMainTopView *topView;
 @property (strong, nonatomic) IBOutlet UIView *bottomView;
+@property (strong, nonatomic) IBOutlet UIView *upView;
 
 /// 充当数据模型数组
 @property (nonatomic, strong) NSArray *dataArray;
@@ -35,11 +36,9 @@
     self = [super initWithCoder:aDecoder];
     if (self) {
         self.backgroundColor = YHTDarkBlueColor;
-        self.topView = [[DemoBMainTopView alloc]initWithFrame:CGRectMake(0, 10, kWindowW, self.frame.size.height-400)];
-        self.topView.backgroundColor = YHTDarkBlueColor;
-        self.topView.delegate = self;
-        [self addSubview:self.topView];
-        [self refreshView];
+//        self.topView = [[DemoBMainTopView alloc]initWithFrame:CGRectMake(0, 10, kWindowW, self.frame.size.height-400)];
+        
+       
 
     }
     return self;
@@ -47,6 +46,13 @@
 //2、初始化完毕`（若想初始化时做点事情，最好在这个方法里面实现）`
 - (void)awakeFromNib {
     [super awakeFromNib];
+    self.topView = [[DemoBMainTopView alloc]initWithFrame:CGRectMake(0, 0, kWindowW, kWindowW)];
+    self.topView.backgroundColor = YHTDarkBlueColor;
+    self.topView.delegate = self;
+    [self.upView addSubview:self.topView];
+    //        [self bringSubviewToFront:self.bottomView];
+    
+    [self refreshView];
     
 }
 

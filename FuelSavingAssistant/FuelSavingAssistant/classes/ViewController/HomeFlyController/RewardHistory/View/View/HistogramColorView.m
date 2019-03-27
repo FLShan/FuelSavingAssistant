@@ -73,8 +73,10 @@
 {
     CAGradientLayer *gradientLayer = [CAGradientLayer layer];
     gradientLayer.frame = CGRectMake(0, 0, BAR_cW, BAR_cH);
-    gradientLayer.colors = @[(__bridge id)[UIColor orangeColor].CGColor,
-                             (__bridge id)[UIColor purpleColor].CGColor];
+//    gradientLayer.colors = @[(__bridge id)[UIColor orangeColor].CGColor,
+//                             (__bridge id)[UIColor purpleColor].CGColor];
+    gradientLayer.colors = @[(__bridge id)YHTGreenColor.CGColor,
+                             (__bridge id)YHTGreenColor.CGColor];
     gradientLayer.startPoint = CGPointMake(0.5, 0);
     gradientLayer.endPoint = CGPointMake(0.5, 1);
     
@@ -84,7 +86,7 @@
     CGContextRef context = UIGraphicsGetCurrentContext();
     
     if (context == nil) {
-        self.colorView.backgroundColor = [UIColor redColor];
+        self.colorView.backgroundColor = [UIColor blueColor];
         return;
     }
     
@@ -100,7 +102,9 @@
 {
     if (select) {
         self.colorView.image = nil;
-        self.colorView.backgroundColor = [UIColor cyanColor];
+//        self.colorView.backgroundColor = [UIColor cyanColor];
+        self.colorView.backgroundColor = YHTPurpleColor;
+
     } else {
         [self screenshot];
         self.colorView.backgroundColor = [UIColor clearColor];

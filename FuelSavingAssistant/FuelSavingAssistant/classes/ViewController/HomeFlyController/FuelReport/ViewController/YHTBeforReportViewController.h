@@ -7,11 +7,13 @@
 //
 
 #import "BaseViewController.h"
+#import "YHTHomeFlyModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface YHTBeforReportViewController : BaseViewController
-
+@property (nonatomic, assign) BOOL isBefor;
+@property (nonatomic, strong) YHTHomeFlyModelItem *model;
 @end
 
 NS_ASSUME_NONNULL_END

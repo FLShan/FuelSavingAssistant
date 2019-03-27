@@ -7,6 +7,7 @@
 //
 
 #import "YHTMyDataViewController.h"
+#import "YHTRewardHistoryViewController.h"
 
 @interface YHTMyDataViewController ()
 @property (strong, nonatomic) IBOutlet UIView *tabelHeadView;
@@ -19,11 +20,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.view.backgroundColor = kRGBColor(78, 80, 99);
-    self.navView.backgroundColor = YHTGreenColor;
+    self.navView.backgroundColor = YHTDarkBlueColor;
     self.mydataTableView.backgroundColor = [UIColor clearColor];
     self.mydataTableView.tableHeaderView = self.tabelHeadView;
+    [self.navView.middleBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     
     
+}
+- (IBAction)didCLickHistoryBtn:(id)sender {
+    YHTRewardHistoryViewController *reportVC = [[YHTRewardHistoryViewController alloc]initWithNibName:@"YHTRewardHistoryViewController" bundle:nil LeftType:navViewLeftButtonTypeWhiteBack andTitle:@"奖励历史" andRightType:navViewRightButtonTypeNone];
+    [self.navigationController pushViewController:reportVC animated:YES];
 }
 
 /*

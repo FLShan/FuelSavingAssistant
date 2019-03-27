@@ -38,7 +38,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.defautDate = [NSDate date];
-        self.calendar = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kWindowW, kWindowW/2 + 300)];
+        self.calendar = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kWindowW, kWindowH/2)];
         [self addSubview:self.calendar];
         self.calendar.backgroundColor = [UIColor whiteColor];
         self.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.5];
@@ -55,10 +55,11 @@
 
 // 初始化calendarView
 - (void)setupCalendarView {
-    self.topview = [[YHTCalendarTopView alloc]initWithFrame:CGRectMake(0, 0, kWindowW, 64)];
+    self.topview = [[YHTCalendarTopView alloc]initWithFrame:CGRectMake(0, 0, kWindowW, 30)];
+//    self.topview.backgroundColor = YHTGreenColor;
     [self.calendar addSubview:self.topview];
     CGFloat itemWH = kWindowW / 7;
-    self.calendarView = [[BXHCalendarView alloc] initWithFrame:CGRectMake(0, 64, kWindowW, itemWH * CalendarDayView_HW_Ration * 6 )];
+    self.calendarView = [[BXHCalendarView alloc] initWithFrame:CGRectMake(0, 30, kWindowW, itemWH * CalendarDayView_HW_Ration * 6 )];
     self.calendarView.dataSource = self;
     self.calendarView.delegate = self;
     [self.calendar addSubview:self.calendarView];
@@ -83,7 +84,7 @@
     NSInteger padding = 20;
     [@[self.todayBtn,self.typeButton] mas_distributeViewsAlongAxis:MASAxisTypeHorizontal withFixedSpacing:padding leadSpacing:padding tailSpacing:padding];
     [@[self.todayBtn,self.typeButton] mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.mas_equalTo(-100);
+        make.bottom.mas_equalTo(-20);
     }];
     
     
@@ -120,7 +121,7 @@
 }
 - (void)calendarView:(BXHCalendarView *)calendarView willShowMonthView:(BXHCalendarMonthView *)monthView
 {
-//    self.title = [NSString stringWithFormat:@"%@",[monthView.beaginDate bxh_stringWithFormate:@"yyyy-MM"]];
+    self.topview.midTitle = [NSString stringWithFormat:@"%@",[monthView.beaginDate bxh_stringWithFormate:@"yyyy-MM"]];
 }
 
 - (void)calendarView:(BXHCalendarView *)calendarView dayViewHaveEvent:(BXHCalendarDayView *)dayView

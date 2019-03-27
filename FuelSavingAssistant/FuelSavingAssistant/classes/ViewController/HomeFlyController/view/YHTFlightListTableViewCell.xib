@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellStr" rowHeight="100" id="KGk-i7-Jjw" customClass="YHTFlightListTableViewCell">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cellStr" rowHeight="100" id="KGk-i7-Jjw" customClass="YHTFlightListTableViewCell">
             <rect key="frame" x="0.0" y="0.0" width="403" height="100"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -41,48 +41,54 @@
                         <constraints>
                             <constraint firstAttribute="width" constant="60" id="icm-bu-rsv"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B5333" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WCA-yK-pCg">
                         <rect key="frame" x="90" y="10" width="60" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="737(中)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7w-NJ-IpW">
                         <rect key="frame" x="160" y="10" width="60" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09：22" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dY-i7-Lu8">
                         <rect key="frame" x="160" y="37" width="60" height="20.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZSSS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dK0-Ob-VFo">
                         <rect key="frame" x="20" y="68.5" width="60" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZSCG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAb-VZ-yZw">
                         <rect key="frame" x="160" y="68.5" width="60" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="07：55" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O8I-Ra-i6M">
                         <rect key="frame" x="20" y="37" width="60" height="20.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bgg-wb-mLp" customClass="YHTarrowView">
+                        <rect key="frame" x="80" y="37" width="80" height="20.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
                 </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
+                    <constraint firstItem="Bgg-wb-mLp" firstAttribute="height" secondItem="O8I-Ra-i6M" secondAttribute="height" id="1JW-9Y-OmD"/>
                     <constraint firstItem="0dY-i7-Lu8" firstAttribute="height" secondItem="c7w-NJ-IpW" secondAttribute="height" id="1e8-Fe-NDj"/>
                     <constraint firstItem="c7w-NJ-IpW" firstAttribute="leading" secondItem="WCA-yK-pCg" secondAttribute="trailing" constant="10" id="40V-fy-mAh"/>
                     <constraint firstItem="tAb-VZ-yZw" firstAttribute="width" secondItem="0dY-i7-Lu8" secondAttribute="width" id="4nB-vZ-pdO"/>
@@ -94,6 +100,8 @@
                     <constraint firstItem="WCA-yK-pCg" firstAttribute="width" secondItem="IDW-Eb-ZNB" secondAttribute="width" id="SxP-FY-5gO"/>
                     <constraint firstItem="WCA-yK-pCg" firstAttribute="centerY" secondItem="IDW-Eb-ZNB" secondAttribute="centerY" id="Up9-VK-KQd"/>
                     <constraint firstItem="dK0-Ob-VFo" firstAttribute="top" secondItem="O8I-Ra-i6M" secondAttribute="bottom" constant="11" id="Wbf-DV-Ycw"/>
+                    <constraint firstItem="Bgg-wb-mLp" firstAttribute="leading" secondItem="O8I-Ra-i6M" secondAttribute="trailing" id="X10-AS-SRX"/>
+                    <constraint firstItem="Bgg-wb-mLp" firstAttribute="centerY" secondItem="O8I-Ra-i6M" secondAttribute="centerY" id="Xjc-FC-dzC"/>
                     <constraint firstItem="c7w-NJ-IpW" firstAttribute="height" secondItem="WCA-yK-pCg" secondAttribute="height" id="aBq-ZJ-Vri"/>
                     <constraint firstAttribute="bottom" secondItem="dK0-Ob-VFo" secondAttribute="bottom" constant="10" id="af2-bQ-GFp"/>
                     <constraint firstItem="tAb-VZ-yZw" firstAttribute="centerX" secondItem="0dY-i7-Lu8" secondAttribute="centerX" id="awU-wC-62o"/>
@@ -111,16 +119,23 @@
                     <constraint firstItem="0dY-i7-Lu8" firstAttribute="centerX" secondItem="c7w-NJ-IpW" secondAttribute="centerX" id="wFE-BQ-71B"/>
                     <constraint firstItem="tAb-VZ-yZw" firstAttribute="centerY" secondItem="dK0-Ob-VFo" secondAttribute="centerY" id="xGt-Xk-dFd"/>
                     <constraint firstItem="WCA-yK-pCg" firstAttribute="leading" secondItem="IDW-Eb-ZNB" secondAttribute="trailing" constant="10" id="y2B-zV-eEa"/>
+                    <constraint firstItem="0dY-i7-Lu8" firstAttribute="leading" secondItem="Bgg-wb-mLp" secondAttribute="trailing" id="yAd-fr-j4p"/>
                     <constraint firstItem="c7w-NJ-IpW" firstAttribute="width" secondItem="WCA-yK-pCg" secondAttribute="width" id="zNT-hZ-7oZ"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
             <connections>
-                <outlet property="arriveTimeLabel" destination="0dY-i7-Lu8" id="XXh-39-ld9"/>
+                <outlet property="arrive4code" destination="tAb-VZ-yZw" id="BzI-DS-Rh7"/>
+                <outlet property="arriveTimeLabel" destination="0dY-i7-Lu8" id="azq-tS-iMx"/>
+                <outlet property="depar4code" destination="dK0-Ob-VFo" id="QcQ-4d-3aK"/>
                 <outlet property="departTimeLabel" destination="O8I-Ra-i6M" id="ixI-Z3-4WT"/>
+                <outlet property="flghtNoLabel" destination="IDW-Eb-ZNB" id="xaN-mx-CAU"/>
+                <outlet property="jihaolabel" destination="WCA-yK-pCg" id="Sc4-kO-gvd"/>
                 <outlet property="stateBtn" destination="GcW-iY-jEx" id="mwA-7K-C6p"/>
+                <outlet property="typeLabel" destination="c7w-NJ-IpW" id="Q94-dA-TB7"/>
             </connections>
-            <point key="canvasLocation" x="-74" y="93"/>
+            <point key="canvasLocation" x="-82.400000000000006" y="95.352323838080963"/>
         </tableViewCell>
     </objects>
 </document>

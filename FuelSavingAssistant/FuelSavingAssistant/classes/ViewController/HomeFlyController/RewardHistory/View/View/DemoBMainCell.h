@@ -11,7 +11,7 @@
 #import "HistogramColorView.h"
 
 #define BAR_cW 30    // 柱状图Cell宽度
-#define BAR_cH 270   // 柱状图高度
+#define BAR_cH 370   // 柱状图高度
 
 
 NS_ASSUME_NONNULL_BEGIN

@@ -10,6 +10,10 @@
 #import "UIView+Ext.h"
 #import "RPTaggedNavView.h"
 #import "YHTDateChartView.h"
+#import "YHTDateChartView1.h"
+
+
+#import "YHTDateChartView3.h"
 
 
 
@@ -27,6 +31,7 @@
     // Do any additional setup after loading the view from its nib.
     self.navView.backgroundColor = YHTDarkBlueColor;
     self.view.backgroundColor = YHTDarkBlueColor;
+    [self.navView.middleBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self createUI];
 }
 - (void)viewWillAppear:(BOOL)animated
@@ -62,9 +67,21 @@
     
     NSArray * labelContentArr = [NSArray arrayWithObjects:@"人生到处知何似，恰似飞鸿踏雪泥；",@"泥上偶然留指爪，鸿飞那复计东西。",@"老僧已死成新塔，坏壁无由见旧题；",@"人生到处知何似，恰似飞鸿踏雪泥；",@"往日崎岖还记否，路长人困蹇驴嘶。", nil];
     for (int i = 0; i<labelContentArr.count; i++) {
-        YHTDateChartView *view = [YHTDateChartView initWithXib:CGRectMake(kWindowW*i, 0, kWindowW, self.bgScroll.height)];
-       
-        [_bgScroll addSubview:view];
+        if (i == 3) {
+            YHTDateChartView3 *view = [YHTDateChartView3 initWithXib:CGRectMake(kWindowW*i, 0, kWindowW, self.bgScroll.height)];
+            
+            [_bgScroll addSubview:view];
+        }else if (i == 0) {
+            YHTDateChartView1 *view = [YHTDateChartView1 initWithXib:CGRectMake(kWindowW*i, 0, kWindowW, self.bgScroll.height)];
+            
+            [_bgScroll addSubview:view];
+        }
+        else{
+            YHTDateChartView *view = [YHTDateChartView initWithXib:CGRectMake(kWindowW*i, 0, kWindowW, self.bgScroll.height)];
+            
+            [_bgScroll addSubview:view];
+        }
+        
     }
 }
 #pragma mark -- taggedNavViewDelegate

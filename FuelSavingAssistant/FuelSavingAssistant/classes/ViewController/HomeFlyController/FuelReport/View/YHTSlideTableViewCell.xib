@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YHTSlideTableViewCell" rowHeight="153" id="KGk-i7-Jjw" customClass="YHTSlideTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="153"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="152.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico2-07.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sax-bK-QDo">
+                        <rect key="frame" x="10" y="10" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Sax-bK-QDo" secondAttribute="height" multiplier="1:1" id="Cc8-J1-bcp"/>
+                            <constraint firstAttribute="width" constant="24" id="Y0J-Bu-cUJ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="操作节油指南" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2My-L3-XaT">
+                        <rect key="frame" x="44" y="13.5" width="86" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7PK-Kq-tGw">
+                        <rect key="frame" x="273" y="13.5" width="37" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <inset key="titleEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="地图" image="icon-arrow1.png">
+                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="didClickMapBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="VXm-DG-Xsh"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2My-L3-XaT" firstAttribute="centerY" secondItem="Sax-bK-QDo" secondAttribute="centerY" id="6fz-FG-Lrf"/>
+                    <constraint firstAttribute="trailing" secondItem="7PK-Kq-tGw" secondAttribute="trailing" constant="10" id="NVj-ta-HmY"/>
+                    <constraint firstItem="Sax-bK-QDo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="bDE-PZ-NC5"/>
+                    <constraint firstItem="2My-L3-XaT" firstAttribute="leading" secondItem="Sax-bK-QDo" secondAttribute="trailing" constant="10" id="lSS-gW-eR8"/>
+                    <constraint firstItem="Sax-bK-QDo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="nXf-wb-IHV"/>
+                    <constraint firstItem="7PK-Kq-tGw" firstAttribute="centerY" secondItem="2My-L3-XaT" secondAttribute="centerY" id="reJ-FS-4ob"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <point key="canvasLocation" x="-518" y="112"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ico2-07.png" width="16" height="16"/>
+        <image name="icon-arrow1.png" width="8" height="13"/>
+    </resources>
+</document>

@@ -14,7 +14,8 @@
 
 @implementation communityViewController
 + (UINavigationController *)defaultCommunityNavi {
-    communityViewController *vc = [communityViewController new];
+//    communityViewController *vc = [communityViewController new];
+    communityViewController *vc = [[communityViewController alloc]initWithNibName:@"communityViewController" bundle:nil LeftType:navViewLeftButtonTypeNone andTitle:@"社区" andRightType:navViewRightButtonTypeNone];
     UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
     return navi;
 }

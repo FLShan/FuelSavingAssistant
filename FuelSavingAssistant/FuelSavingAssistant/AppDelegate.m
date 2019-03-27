@@ -8,12 +8,14 @@
 
 #import "AppDelegate.h"
 #import "HomeFlyViewController.h"
-#import "studyViewController.h"
+#import "YHTAddressBookViewController.h"
 #import "communityViewController.h"
 #import "myViewController.h"
 #import "DemoMeController.h"
 
 #import <BaiduMapAPI_Base/BMKBaseComponent.h>//引入base相关所有的头文件
+#import "SIDADView.h"
+
 
 @interface AppDelegate ()<BMKGeneralDelegate>
 @property (nonatomic, strong) BMKMapManager *mapManager; //主引擎类
@@ -47,13 +49,21 @@
 - (void)setupViewControllers {
     UINavigationController *navi0 = [HomeFlyViewController defaultHomeFlyNavi];
     navi0.navigationBar.hidden = YES;
-    UINavigationController *navi1 = [studyViewController defaultStudyNavi];
+    UINavigationController *navi1 = [YHTAddressBookViewController defaultStudyNavi];
     UINavigationController *navi2 = [communityViewController defaultCommunityNavi];
     UINavigationController *vc3 = [DemoMeController defaultMyNavi];
     CYLTabBarController *tbc = [CYLTabBarController new];
     [self customTabBarForController:tbc];
     [tbc setViewControllers:@[navi0,navi1,navi2,vc3]];
     self.tabBarController = tbc;
+//    SIDADView *adView = [[SIDADView alloc]init];
+//    //当faceInfo为nil时，adView不显示。
+//    [adView showInView:self.tabBarController.view withFaceInfo:@{@"lively":@"活泼",@"character":@"lively",@"tags":@[@"goodLooking"],@"gender":@"man",@"generation":@"80"} advertisementImage:[UIImage imageNamed:@"adImage"] borderColor:nil];
+    NSDictionary *dictHome = [NSDictionary dictionaryWithObject:[UIColor blackColor] forKey:NSForegroundColorAttributeName];
+    [navi0.tabBarItem setTitleTextAttributes:dictHome forState:UIControlStateSelected];
+     [navi1.tabBarItem setTitleTextAttributes:dictHome forState:UIControlStateSelected];
+     [navi2.tabBarItem setTitleTextAttributes:dictHome forState:UIControlStateSelected];
+     [vc3.tabBarItem setTitleTextAttributes:dictHome forState:UIControlStateSelected];
     
 }
 
@@ -61,10 +71,10 @@
     NSDictionary *dict0 = @{CYLTabBarItemTitle:@"首页",
                             CYLTabBarItemImage:@"tabbar_home_icon_unselect",
                             CYLTabBarItemSelectedImage:@"tabbar_home_icon_select"};
-    NSDictionary *dict1 = @{CYLTabBarItemTitle:@"学习",
+    NSDictionary *dict1 = @{CYLTabBarItemTitle:@"通讯录",
                             CYLTabBarItemImage:@"tabbar_GPC_icon_unselect",
                             CYLTabBarItemSelectedImage:@"tabbar_GPC_icon_select"};
-    NSDictionary *dict2 = @{CYLTabBarItemTitle:@"社区",
+    NSDictionary *dict2 = @{CYLTabBarItemTitle:@"朋友圈",
                             CYLTabBarItemImage:@"tabbar_destination_icon_unselect",
                             CYLTabBarItemSelectedImage:@"tabbar_destination_icon_select"};
     NSDictionary *dict3 = @{CYLTabBarItemTitle:@"我的",

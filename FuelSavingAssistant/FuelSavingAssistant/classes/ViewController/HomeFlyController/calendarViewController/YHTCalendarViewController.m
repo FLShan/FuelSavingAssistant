@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-     self.calendarView = [[YHTCalendarView alloc]initWithFrame:CGRectMake(0, 88, kWindowW, kWindowH)];
+     self.calendarView = [[YHTCalendarView alloc]initWithFrame:CGRectMake(0, 64, kWindowW, kWindowH)];
     __weak typeof(self) weakSelf = self;
     self.calendarView.CalendarSelectedWithDate = ^(NSDate* date){
         [weakSelf dismissViewControllerAnimated:YES completion:nil];
@@ -70,6 +70,9 @@
 
 #pragma mark - 初始化view
 
-
+-(void)navLeftButtonClicked:(id)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end

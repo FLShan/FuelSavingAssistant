@@ -12,24 +12,39 @@
 -(instancetype)initYHTHomeFlyModelItemWith:(NSDictionary *)dic{
     if (self = [super init]) {
         @try {
-            self.FltID = [dic safeObjectForKey:@"FltID"];
-            self.FltNumber = [dic safeObjectForKey:@"FltNumber"];
-            self.AcType = [dic safeObjectForKey:@"AcType"];
-            self.Acreg = [dic safeObjectForKey:@"Acreg"];
-            self.FltDate = [dic safeObjectForKey:@"FltDate"];
-            self.DepTime = [dic safeObjectForKey:@"DepTime"];
-            self.ArrTime = [dic safeObjectForKey:@"ArrTime"];
-            self.DepApt = [dic safeObjectForKey:@"DepApt"];
-            self.DepApt4Code = [dic safeObjectForKey:@"DepApt4Code"];
-            self.DepAptStand = [dic safeObjectForKey:@"DepAptStand"];
-            self.DepAptIsCBridge = [dic safeObjectForKey:@"DepAptIsCBridge"];
-            self.ArrApt = [dic safeObjectForKey:@"ArrApt"];
-            self.ArrApt4Code = [dic safeObjectForKey:@"ArrApt4Code"];
-            self.ArrAptStand = [dic safeObjectForKey:@"ArrAptStand"];
-            self.ArrAptIsCBridge = [dic safeObjectForKey:@"ArrAptIsCBridge"];
-            self.ExpectedSaveFuel = [dic safeObjectForKey:@"ExpectedSaveFuel"];
-            self.RealSaveFuel = [dic safeObjectForKey:@"RealSaveFuel"];
-            self.FltStatus = [dic safeObjectForKey:@"FltStatus"];
+            
+            self.Fid = [dic safeObjectForKey:@"id"];
+            self.duanjixing = [dic safeObjectForKey:@"duanjixing"];
+            self.feijihao = [dic safeObjectForKey:@"feijihao"];
+            self.hangbanhao = [dic safeObjectForKey:@"hangbanhao"];
+            self.qifeijichang = [dic safeObjectForKey:@"qifeijichang"];
+            self.qifeijichang4 = [dic safeObjectForKey:@"qifeijichang4"];
+            self.zhuangtai = [dic safeObjectForKey:@"zhuangtai"];
+            self.jingangkaoqiao = [dic safeObjectForKey:@"jingangkaoqiao"];
+            self.chugangkaoqiao = [dic safeObjectForKey:@"chugangkaoqiao"];
+            self.jizhunkongzhongyouhao = [dic safeObjectForKey:@"jizhunkongzhongyouhao"];
+            self.jieyoubiaoji = [dic safeObjectForKey:@"jieyoubiaoji"];
+            self.shijikongzhongyouhao = [dic safeObjectForKey:@"shijikongzhongyouhao"];
+            self.jizhunAPD = [dic safeObjectForKey:@"jizhunAPD"];
+            self.APD = [dic safeObjectForKey:@"APD"];
+            self.jizhunxunhanggaodu = [dic safeObjectForKey:@"jizhunxunhanggaodu"];
+            self.xunhanggaodu = [dic safeObjectForKey:@"xunhanggaodu"];
+            self.jizhunyezai = [dic safeObjectForKey:@"jizhunyezai"];
+            self.yezai = [dic safeObjectForKey:@"yezai"];
+            self.jizhunhangduanjuli = [dic safeObjectForKey:@"jizhunhangduanjuli"];
+            self.hangduanjuli = [dic safeObjectForKey:@"hangduanjuli"];
+            self.shijidaoda = [dic safeObjectForKey:@"shijidaoda"];
+            self.shijiqifei = [dic safeObjectForKey:@"shijiqifei"];
+            self.yujidaoda = [dic safeObjectForKey:@"yujidaoda"];
+            self.yujiqifei = [dic safeObjectForKey:@"yujiqifei"];
+            self.jihuadaoda = [dic safeObjectForKey:@"jihuadaoda"];
+            self.jihuaqifei = [dic safeObjectForKey:@"jihuaqifei"];
+            self.jiangluojichang4 = [dic safeObjectForKey:@"jiangluojichang4"];
+            self.jiangluojichang = [dic safeObjectForKey:@"jiangluojichang"];
+            self.guozhanshijianjizhun = [dic safeObjectForKey:@"guozhanshijianjizhun"];
+            self.guozhanshijianjihua = [dic safeObjectForKey:@"guozhanshijianjihua"];
+            self.guozhanshijianshiji = [dic safeObjectForKey:@"guozhanshijianshiji"];
+            
         }
         @catch (NSException *exception) {
             NSLog(@"%@",exception);
@@ -41,21 +56,47 @@
     return self;
 }
 @end
-@implementation YHTHomeFlyModel
--(id)initWithYHTHomeFlyModelDataWithDictionary:(NSDictionary*)dic{
+
+
+@implementation YHTHomeFlyFlightsModel
+-(id)initWithYHTHomeFlyFlightsModelDataWithDictionary:(NSDictionary*)dic{
     if (self = [super init]) {
         @try {
-            self.items = [NSMutableArray array];
-            self.code = [dic safeObjectForKey:@"code"];
-            self.msg  = [dic safeObjectForKey:@"msg"];
-            self.success = [dic safeObjectForKey:@"success"];
-            self.data = [dic safeObjectForKey:@"data"];
-            self.items = [self.data safeObjectForKey:@"items"];
-            [self.items enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            self.flightItems = [NSMutableArray array];
+            NSArray *items = [dic safeObjectForKey:@"flights"];
+            [items enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
                 if ([obj isKindOfClass:[NSDictionary class]]) {
                     NSDictionary *itemDic = (NSDictionary *)obj;
                     YHTHomeFlyModelItem *item = [[YHTHomeFlyModelItem alloc]initYHTHomeFlyModelItemWith:itemDic];
                     [self.flightItems addObject:item];
+                }
+            }];
+        }
+        @catch (NSException *exception) {
+            NSLog(@"%@",exception);
+        }
+        @finally {
+            
+        }
+    }
+    return self;
+}
+@end
+
+
+
+
+@implementation YHTHomeFlyModel
+-(id)initWithYHTHomeFlyModelDataWithDictionary:(NSDictionary*)dic{
+    if (self = [super init]) {
+        @try {
+            self.flightDayItems =[NSMutableArray array];
+            NSArray *items = [dic safeObjectForKey:@"items"];
+            [items enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+                if ([obj isKindOfClass:[NSDictionary class]]) {
+                    NSDictionary *itemDic = (NSDictionary *)obj;
+                    YHTHomeFlyFlightsModel *item = [[YHTHomeFlyFlightsModel alloc]initWithYHTHomeFlyFlightsModelDataWithDictionary:itemDic];
+                    [self.flightDayItems addObject:item];
                 }
             }];
         }

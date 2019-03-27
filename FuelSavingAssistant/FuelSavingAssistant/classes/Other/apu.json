@@ -1,0 +1,182 @@
+{
+    "huachu": [{
+        
+        "name": "额外油",
+        "yujizhixing": "100kg",
+        "yujijieyouliang": "12kg",
+        "zuidayuqizhixing": "0kg",
+        "zuidayuqijieyouliang": "18kg",
+        "shijizhixing": "0kg",
+        "shijijieyouliang": "18kg",
+        "shengyujieyouqianli": "0kg"
+    },
+    {
+        
+        "name": "APU时长",
+        "yujizhixing": "5min",
+        "yujijieyouliang": "2.23kg",
+        "zuidayuqizhixing": "3min",
+        "zuidayuqijieyouliang": "6.5kg",
+        "shijizhixing": "4min",
+        "shijijieyouliang": "4.5kg",
+        "shengyujieyouqianli": "2kg"
+    },
+    {
+        
+        "name": "滑出时长",
+        "yujizhixing": "7min",
+        "yujijieyouliang": "30.62kg",
+        "zuidayuqizhixing": "6min",
+        "zuidayuqijieyouliang": "51.3kg",
+        "shijizhixing": "8min",
+        "shijijieyouliang": "25kg",
+        "shengyujieyouqianli": "26.3kg"
+    }
+    ],
+    "qifei": [{
+        
+        "name": "收起落架高度",
+        "yujizhixing": "70ft",
+        "yujijieyouliang": "1.2kg",
+        "zuidayuqizhixing": "35ft",
+        "zuidayuqijieyouliang": "1.9kg",
+        "shijizhixing": "65ft",
+        "shijijieyouliang": "1.25kg",
+        "shengyujieyouqianli": "0.65kg"
+    },
+    {
+        
+        "name": "收襟翼高度",
+        "yujizhixing": "1700ft",
+        "yujijieyouliang": "11kg",
+        "zuidayuqizhixing": "1500ft",
+        "zuidayuqijieyouliang": "15kg",
+        "shijizhixing": "2010ft",
+        "shijijieyouliang": "4.8kg",
+        "shengyujieyouqianli": "10.20kg"
+    },
+    {
+        
+        "name": "减推力高度",
+        "yujizhixing": "1700ft",
+        "yujijieyouliang": "7.5kg",
+        "zuidayuqizhixing": "1500ft",
+        "zuidayuqijieyouliang": "11kg",
+        "shijizhixing": "2010ft",
+        "shijijieyouliang": "2.9kg",
+        "shengyujieyouqianli": "8.1kg"
+    }
+    ],
+    "xunhang": [{
+        
+        "name": "航线距离",
+        "yujizhixing": "1080km",
+        "yujijieyouliang": "215kg",
+        "zuidayuqizhixing": "1030km",
+        "zuidayuqijieyouliang": "233kg",
+        "shijizhixing": "1100km",
+        "shijijieyouliang": "229kg",
+        "shengyujieyouqianli": "4kg"
+    },
+    {
+        
+        "name": "巡航高度达成率",
+        "yujizhixing": "90%",
+        "yujijieyouliang": "85kg",
+        "zuidayuqizhixing": "98%",
+        "zuidayuqijieyouliang": "117kg",
+        "shijizhixing": "95%",
+        "shijijieyouliang": "109kg",
+        "shengyujieyouqianli": "8kg"
+    },
+    {
+        
+        "name": "CI执行率",
+        "yujizhixing": "92%",
+        "yujijieyouliang": "26kg",
+        "zuidayuqizhixing": "99%",
+        "zuidayuqijieyouliang": "34kg",
+        "shijizhixing": "93%",
+        "shijijieyouliang": "30kg",
+        "shengyujieyouqianli": "4kg"
+    }
+    ],
+    "xiajiang": [{
+        
+        "name": "放襟翼高度",
+        "yujizhixing": "2050ft",
+        "yujijieyouliang": "15.5kg",
+        "zuidayuqizhixing": "1900ft",
+        "zuidayuqijieyouliang": "18kg",
+        "shijizhixing": "2435ft",
+        "shijijieyouliang": "7.5kg",
+        "shengyujieyouqianli": "10.5kg"
+    },
+    {
+        
+        "name": "放起落架高度",
+        "yujizhixing": "2135ft",
+        "yujijieyouliang": "10kg",
+        "zuidayuqizhixing": "1900ft",
+        "zuidayuqijieyouliang": "15.7kg",
+        "shijizhixing": "2030ft",
+        "shijijieyouliang": "12kg",
+        "shengyujieyouqianli": "3.7kg"
+    },
+    {
+        
+        "name": "连续下降（平飞距离）",
+        "yujizhixing": "20km",
+        "yujijieyouliang": "13kg",
+        "zuidayuqizhixing": "14km",
+        "zuidayuqijieyouliang": "18kg",
+        "shijizhixing": "25km",
+        "shijijieyouliang": "6kg",
+        "shengyujieyouqianli": "12kg"
+    }
+    ],
+    "huaru": [{
+        
+        "name": "滑入时长",
+        "yujizhixing": "5min",
+        "yujijieyouliang": "31.62kg",
+        "zuidayuqizhixing": "3min",
+        "zuidayuqijieyouliang": "57.7kg",
+        "shijizhixing": "4min",
+        "shijijieyouliang": "45.1kg",
+        "shengyujieyouqianli": "12.6kg"
+    },
+    {
+        
+        "name": "APU时长",
+        "yujizhixing": "4min",
+        "yujijieyouliang": "2.3kg",
+        "zuidayuqizhixing": "3min",
+        "zuidayuqijieyouliang": "4.7kg",
+        "shijizhixing": "3min",
+        "shijijieyouliang": "4.7kg",
+        "shengyujieyouqianli": "0kg"
+    },
+    {
+        "name": "最大反推力时间",
+        "yujizhixing": "13s",
+        "yujijieyouliang": "8.4kg",
+        "zuidayuqizhixing": "8s",
+        "zuidayuqijieyouliang": "15.2kg",
+        "shijizhixing": "14s",
+        "shijijieyouliang": "4.8kg",
+        "shengyujieyouqianli": "10.4kg"
+        
+    },
+    {
+        "name": "单发滑入时长占比",
+        "yujizhixing": "50%",
+        "yujijieyouliang": "0.9kg",
+        "zuidayuqizhixing": "60%",
+        "zuidayuqijieyouliang": "1.8kg",
+        "shijizhixing": "54%",
+        "shijijieyouliang": "1.35kg",
+        "shengyujieyouqianli": "0.45kg"
+    }
+    ]
+}
